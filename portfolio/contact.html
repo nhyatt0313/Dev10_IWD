@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<!--
+	Name: Nathan Hyatt
+	Date Created: 09/08/2018
+	Most Recent Revision: 09/08/2018
+-->
+
+<html lang="en">
+	<head>
+		<title>Contact</title>
+	</head>
+	
+	<body>
+		<main>
+					
+			<header>
+				<h1>Contact Me</h1>
+			</header>
+			<hr />
+			
+			<nav>
+				<a href="index.html">
+					<figure>
+						<img src="images/self-portrait-500px.jpg" alt="Home page" width="100px" id="home-photo"/><br/>
+						<figcaption>Home Page</figcaption>
+					</figure>
+				</a>
+			</nav>
+			<hr />
+			<h2>Information Request</h2>
+			<form action="submit.html" method="POST">
+				<label for="first-name">First Name:</label><br/>
+				<input type="text" name="first-name" id="first-name"/><br/>
+				
+				<label for="last-name">Last Name:</label><br/>
+				<input type="text" name="last-name" id="last-name"/><br/>
+				
+				<label for="phone">Phone Number:</label><br/>
+				<input type="text" name="phone" id="phone"/><br/>
+				
+				<label for="contact">Best time to call:</label><br/>
+				<select id="contact" name="contact">
+					<option value="default">--Select One--</option>
+					<option value="morning">Morning (8AM - 12PM MT)</option>
+					<option value="afternoon">Afternoon (12PM - 5PM MT)</option>
+					<option value="evening">Evening (5PM - 8PM MT)</option>
+				</select>
+				
+				<fieldset>
+					<legend>I am interested in (check all that apply)</legend>
+					<input type="checkbox" name="interest" value="front" id="front"/>
+						<label for="front">Front End Web Development</label><br/>
+					<input type="checkbox" name="interest" value="back" id="back"/>
+						<label for"back">Back End Web Development</label><br/>
+					<input type="checkbox" name="interest" value="data" id="data"/>
+						<label for="data">Database Design</label><br/>
+				</fieldset>
+			</form>
+			
+			<footer>
+			</footer>
+			
+		</main>
+	</body>
+</html>

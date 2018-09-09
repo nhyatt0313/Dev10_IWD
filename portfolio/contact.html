@@ -48,7 +48,7 @@
 				</select>
 				
 				<fieldset>
-					<legend>I am interested in (check all that apply)</legend>
+					<legend>I am interested in (check all that apply)</legend><br/>
 					<input type="checkbox" name="interest" value="front" id="front"/>
 						<label for="front">Front End Web Development</label><br/>
 					<input type="checkbox" name="interest" value="back" id="back"/>
@@ -56,6 +56,19 @@
 					<input type="checkbox" name="interest" value="data" id="data"/>
 						<label for="data">Database Design</label><br/>
 				</fieldset>
+				
+				<fieldset>
+					<legend>I have filled in the client questionnaire form:</legend><br/>
+					<input type="radio" name="questionnaire" value="yes" id="choice1"/>
+						<label for="choice1">Yes</label><br/>
+					<input type="radio" name="questionnaire" value="no" id="choice2"/>
+						<label for="choice2">No</label><br/>
+				</fieldset>
+				
+				<label for="info">Additional Information:</label><br/>
+				<textarea id="info" name="info"></textarea><br/>
+				
+				<input type="submit" name="submit" value="submit" />
 			</form>
 			
 			<footer>

@@ -18,15 +18,64 @@
 			</header>
 			
 			<hr />
-			
 			<nav>
 				<!-- Website Navigation -->
 				<p><a href="home.html">Home</a></p>
 				<p><a href="menu.html">Menu</a></p>
 				<p><a href="">Contact Us</a></p>
 			</nav>
-			
 			<hr />
+			
+			<section>
+				<form action="submit.html" method="POST">
+					<label for="name">Name: </label>
+					<input type="text" id="name"/><br/><br/>
+					
+					<label for="email">Email: </label>
+					<input type="text" id="email"/><br/><br/>
+					
+					<label for="phone">Phone: </label>
+					<input type="text" id="phone"/><br/><br/>
+					
+					<label for="reason">Reason for Inquiry: </label>
+					<select id="reason">
+						<option value="default">Catering</option>
+						<option value="private-party">Private Party</option>
+						<option value="feedback">Feedback</option>
+						<option value="other">Other</option>
+					</select><br/><br/>
+					
+					<label for="info">Additional Information: </label>
+					<textarea id="info"></textarea><br/><br/>
+					
+					<label for="radio-input">Have you been to the restaurant? </label>
+					<section id="radio-input">
+						<label for="choice1">No </label>
+						<input type="radio" name="visit" value="no" id="choice1">
+						<label for="choice2">Yes </label>
+						<input type="radio" name="visit" value="yes" id="choice2">
+					</section><br/><br/>
+					
+					<label for="checkbox-selection">Best days to contact you: </label>
+					<section id="checkbox-selection">
+						<label for="m">M </label>
+						<input type="checkbox" name="day" value="m" id="m"/>
+						
+						<label for="t">T </label>
+						<input type="checkbox" name="day" value="t" id="t"/>
+						
+						<label for="w">W </label>
+						<input type="checkbox" name="day" value="w" id="w"/>
+						
+						<label for="th">Th </label>
+						<input type="checkbox" name="day" value="th" id="th"/>
+						
+						<label for="f">F </label>
+						<input type="checkbox" name="day" value="f" id="f"/>
+					</section><br/><br/>
+					<input type="submit" name="submit" value="Send Request"/><br/>
+				</form>
+			</section>
 			
 			<footer>
 				<hr />

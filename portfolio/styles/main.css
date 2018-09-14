@@ -2,13 +2,15 @@
 /*
 	Name: Nathan Hyatt
 	Date Created: 09/13/2018
-	Most Recent Revision: 09/13/2018
+	Most Recent Revision: 09/14/2018
 */
 
 body {
 	background-color: #fef9ff;
 	font-family: arial, helvetica, sans-serif;
 	color: #0d1f2d;
+	max-width: 1200px; /* Made wider than 900px in order to fit table alongside picture */
+	margin: 0 auto;
 }
 header, footer {
 	background-color: #5b7d87;
@@ -24,4 +26,44 @@ nav {
 	border-top: 3px dashed #546a7b;
 	border-bottom: 3px dashed #546a7b;
 	margin-top: 4px;
+}
+.clear-float {
+	clear:both;
+}
+article img {
+	float:left;
+}
+.right-content {
+	float:left;
+}
+article {
+	margin-bottom: 16px;
+}
+
+/* padding added to line up with table and list */
+article div p {
+	padding-left: 30px;
+}
+
+nav a {
+	background-color: #5b7d87;
+	color: #fef9ff;
+	padding: 8px;
+	border: thin solid #0d1f2d;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	margin: 20px;
+	width: 100px;
+	float: left;
+}
+nav a:visited {
+	color: #e4c3ad;
+}
+nav a:hover {
+	background-color: #fef9ff;
+	color: #5b7d87;
+}
+nav a:active {
+	font-weight: bold;
 }

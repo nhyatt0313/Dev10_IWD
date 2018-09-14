@@ -3,13 +3,59 @@
 <!--
 	Name: Nathan Hyatt
 	Date Created: 09/08/2018
-	Most Recent Revision: 09/09/2018
+	Most Recent Revision: 09/14/2018
 -->
 
 <html lang="en">
 	<head>
 		<title>Contact</title>
 		<link href="styles/main.css" rel="stylesheet" type="text/css" />
+		
+		<style>
+			<!-- form style -->
+			label, fieldset {
+				font-size: 1.1em;
+			}
+			input[type=text] {
+				border: 2px solid #0d1f2d;
+				width: 50%;
+				padding: 8px 8px;
+				margin: 12px 0;
+				box-sizing: border-box;
+			}
+			fieldset {
+				background-color: #fef9ff;
+				width: 100%;
+				padding: 12px 20px;
+				margin:12px 0;
+				box-sizing: border-box;
+			}
+			select, textarea {
+				margin: 12px 0;
+				font-size: 1em;
+			}
+			input[type=submit] {
+				font-size: 1.2em;
+				background-color: #546a7b;
+				color: #fef9ff;
+				padding: 4px 8px;
+			}
+			input[type=submit]:hover {
+				background-color: #f2eded;
+				color: #546a7b;
+			}
+			textarea {
+				width: 100%;
+				height: 200px;
+				padding: 12px 20px;
+				margin: 12px 0;
+				box-sizing: border-box;
+				border: 2px solid #0d1f2d;
+				border-radius: 3px;
+				background-color: #fff;
+				resize: none;
+			}
+		</style>
 	</head>
 	
 	<body>
@@ -20,12 +66,8 @@
 			</header>
 			
 			<nav>
-				<a href="index.html">
-					<figure>
-						<img src="images/self-portrait-500px.jpg" alt="Home page" width="100px" id="home-photo"/><br/>
-						<figcaption>Home Page</figcaption>
-					</figure>
-				</a>
+				<p><a href="index.html">Home</a></P>
+				<div class="clear-float"></div>
 			</nav>
 
 			<h2>Information Request</h2>
@@ -68,7 +110,7 @@
 				<label for="info">Additional Information:</label><br/>
 				<textarea id="info" name="info"></textarea><br/>
 				
-				<input type="submit" name="submit" value="submit" />
+				<input type="submit" name="submit" value="Submit" />
 			</form>
 			
 			<footer>

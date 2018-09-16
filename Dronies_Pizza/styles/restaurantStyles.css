@@ -1,0 +1,25 @@
+
+/*
+	Name: Nathan Hyatt
+	Date Created: 09/15/2018
+	Most Recent Revision: 09/16/2018
+*/
+
+header, footer {
+	background-color: #353c61;
+	color: #fff4f0;
+	text-align: center;
+	margin-top: 10px;
+}
+header {
+	font-family: 'Cinzel', serif;
+	padding-left: 30px;
+}
+body {
+	background-color: #fff4f0;
+}
+nav .btn {
+	background-color: #353c61;
+	color: #fff4f0;
+	margin: 5px;
+}

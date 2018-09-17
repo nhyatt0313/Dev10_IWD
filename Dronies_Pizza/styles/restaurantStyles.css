@@ -10,16 +10,40 @@ header, footer {
 	color: #fff4f0;
 	text-align: center;
 	margin-top: 10px;
+	padding: 10px 0;
 }
 header {
 	font-family: 'Cinzel', serif;
 	padding-left: 30px;
+	padding-top: 10px;
 }
 body {
 	background-color: #fff4f0;
 }
-nav .btn {
+nav {
 	background-color: #353c61;
+	padding-left: 30px;
+	margin-bottom: 10px;
+}
+nav .btn {
+	background-color: #fff4f0;
+	color: #353c61;
+	margin: 5px 5px 5px 0;
+}
+nav .btn:hover {
+	font-weight: bold;
 	color: #fff4f0;
-	margin: 5px;
+}
+nav .btn:visited {
+	color: #e84d02;
+}
+.page-content {
+	padding: 10px;
+	background-color: #305261;
+	margin: 0 30px;
+	color: #fff4f0;
+}
+#divider {
+	color: #fff4f0;
+	text-align: center;
 }

@@ -19,7 +19,47 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 		
 		<style>
-			<!-- styles for the contact form -->
+			.required-input {
+				font-weight: bold;
+			}
+			input {
+				border-radius: 4px;
+			}
+			.required-input input {
+				box-sizing: border-box;
+				width: 100%;
+			}
+			select {
+				border-radius: 4px;
+				box-sizing: border-box;
+				width: 100%;
+				
+			}
+			textarea {
+				border-radius: 4px;
+				height: 100px;
+				width: auto;
+				margin-right: 0;
+				box-sizing: border-box;
+				width: 100%;
+			}
+			form .row {
+				margin: 10px auto 0 10px;
+			}
+			#radio-input input {
+				margin-left: 10px;
+			}
+			#radio-input label {
+				margin-left: 10px;
+			}
+			#checkbox-selection input {
+				margin-left: 5px;
+				margin-right: 0;
+			}
+			#checkbox-selection label {
+				margin-left: 5px;
+			}
+			
 		</style>
 	</head>
 	
@@ -36,54 +76,113 @@
 				<p><a class="btn" href="">Contact Us</a></p>
 			</nav>
 			
-			<section>
-				<form action="submit.html" method="POST">
-					<label for="name">Name: </label>
-					<input type="text" id="name"/><br/><br/>
-					
-					<label for="email">Email: </label>
-					<input type="text" id="email"/><br/><br/>
-					
-					<label for="phone">Phone: </label>
-					<input type="text" id="phone"/><br/><br/>
-					
-					<label for="reason">Reason for Inquiry: </label>
-					<select id="reason">
-						<option value="default">Catering</option>
-						<option value="private-party">Private Party</option>
-						<option value="feedback">Feedback</option>
-						<option value="other">Other</option>
-					</select><br/><br/>
-					
-					<label for="info">Additional Information: </label>
-					<textarea id="info"></textarea><br/><br/>
-					
-					<label for="radio-input">Have you been to the restaurant? </label>
-					<section id="radio-input">
-						<label for="choice1">No </label>
-						<input type="radio" name="visit" value="no" id="choice1">
-						<label for="choice2">Yes </label>
-						<input type="radio" name="visit" value="yes" id="choice2">
-					</section><br/><br/>
-					
-					<label for="checkbox-selection">Best days to contact you: </label>
-					<section id="checkbox-selection">
-						<label for="m">M </label>
-						<input type="checkbox" name="day" value="m" id="m"/>
+			<section class="page-content">
+				<form action="submit.html" method="POST" class="form-horizontal">
+					<div class="container">
+						<div class="required-input">
 						
-						<label for="t">T </label>
-						<input type="checkbox" name="day" value="t" id="t"/>
+							<div class="row">
+								<div class="col-2">
+									<label for="name">Name: </label>
+								</div>
+								<div class="col-4">
+									<input type="text" id="name" required /><br/><br/>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-2">
+									<label for="email">Email: </label>
+								</div>
+								<div class="col-4">
+									<input type="email" id="email" required /><br/><br/>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-2">
+									<label for="phone">Phone: </label>
+								</div>
+								<div class="col-4">
+									<input type="tel" id="phone" required /><br/><br/>
+								</div>
+							</div>
 						
-						<label for="w">W </label>
-						<input type="checkbox" name="day" value="w" id="w"/>
+						</div>
+					
+					
+						<div class="row">
 						
-						<label for="th">Th </label>
-						<input type="checkbox" name="day" value="th" id="th"/>
+							<div class="col-2">
+								<label for="reason">Reason for Inquiry: </label>
+							</div>
+							<div class="col-4">
+								<select id="reason">
+									<option value="default">Catering</option>
+									<option value="private-party">Private Party</option>
+									<option value="feedback">Feedback</option>
+									<option value="other">Other</option>
+								</select><br/>
+							</div>
+							
+						</div>
 						
-						<label for="f">F </label>
-						<input type="checkbox" name="day" value="f" id="f"/>
-					</section><br/><br/>
-					<input type="submit" name="submit" value="Send Request"/><br/>
+						<div class="row">
+							<div class="col-6">
+								<label for="info">Additional Information: </label><br />
+								<textarea id="info"></textarea><br/><br/>
+							</div>
+							
+						</div>
+						
+						<div class="row">
+							
+							<div class="col-4">
+								<label for="radio-input">Have you been to the restaurant? </label>
+							</div>
+							<div class="col-2">
+								<section id="radio-input">
+									<label for="choice1">No </label>
+									<input type="radio" name="visit" value="no" id="choice1">
+									<label for="choice2">Yes </label>
+									<input type="radio" name="visit" value="yes" id="choice2">
+								</section>
+							</div>
+							
+						</div>
+						
+						<div class="row">
+							
+							<div class="col-3">
+								<label for="checkbox-selection">Best days to contact you: </label>
+							</div>
+							<div class="col-4">
+								<section id="checkbox-selection">
+									<label for="m">M </label>
+									<input type="checkbox" name="day" value="m" id="m"/>
+									
+									<label for="t">T </label>
+									<input type="checkbox" name="day" value="t" id="t"/>
+									
+									<label for="w">W </label>
+									<input type="checkbox" name="day" value="w" id="w"/>
+									
+									<label for="th">Th </label>
+									<input type="checkbox" name="day" value="th" id="th"/>
+									
+									<label for="f">F </label>
+									<input type="checkbox" name="day" value="f" id="f"/>
+								</section>
+							</div>
+						
+						</div>
+						
+						<div class="row">
+						
+							<input type="submit" name="submit" value="Send Request"/><br/>
+						
+						</div>
+					</div>
 				</form>
 			</section>
 			
@@ -91,7 +190,7 @@
 				<p>1984 Flying Pizza Drive</p>
 				<p>Justorderit, OK 359464</P>
 				<p>1-800-555-3766
-
+				<p id="divider">&#9671;</p>
 				<p>&copy; 2018 Nathan Hyatt. All rights reserved.</P>
 			</footer>
 			

@@ -20,15 +20,45 @@
 		
 		
 		<style type="text/css">
-			<!-- styles for the menu -->
 			#menu {
 				padding: 10px;
+				background-color: #305261;
+				margin: 0 30px;
 			}
 			#menu article {
 				padding: 5px 30px;
-				background-color: #305261;
+				
+				color: #fff4f0;
+				min-width: 300px;
+				margin: 10px auto;
+			}
+			article h2 {
+				text-align: center;
+			}
+			#menu article p {
+				text-align: center;
+				margin-bottom: 0;
+			}
+			table {
+				margin: 20px auto;
 				color: #fff4f0;
 			}
+			th {
+				font-size: 2em;
+				font-weight: normal;
+				text-align: center;
+			}
+			td {
+				width: 100px;
+			}
+			td:nth-child(even) {
+				text-align: right;
+			}
+			td:nth-child(odd) {
+				text-align: left;
+			}
+
+			
 		</style>
 	</head>
 	
@@ -47,54 +77,80 @@
 			</nav>
 			
 			<div id="menu">
-				<article>
+				<div class="row">
+				<article class="col-4" id="left-menu">
 				<!-- Meat Items -->
 					<!-- Menu Item 1 -->
 					<h2>Perfect Pepperoni</h2>
-					<p>Classic choice!</p>
-					<p>Marinara sauce with mozerella cheese and you guessed it... Pepperoni!</P>
+					<p>Classic choice!
+					Marinara sauce with mozerella cheese and you guessed it... Pepperoni!</P>
 					<p>$ 10.00</P>
 					
 					<!-- Menu Item 2 -->
 					<h2>Amazing Aloha</h2>
-					<p>You'll pine away over this one!</p>
-					<p>Marinara sauce with mozerella cheese, fresh pineapple, and canadian bacon.</P>
+					<p>You'll pine away over this one!
+					Marinara sauce with mozerella cheese, fresh pineapple, and canadian bacon.</P>
 					<p>$ 11.00</P>
 					
 					<!-- Menu Item 3 -->
 					<h2>Meaty Monster</h2>
-					<p>This is a meating to remember!</p>
-					<p>Marinara sauce, mozerella cheese, and healthy portions of andouille sausage, italian sausage, and bacon.</P>
+					<p>This is a meating to remember!
+					Marinara sauce, mozerella cheese, and healthy portions of andouille sausage, italian sausage, and bacon.</P>
 					<p>$ 12.00</P>
 				</article>
 				
-				<article>
+				<article class="col-4" id="right-menu">
 				<!-- Veggie Items -->	
 					<!-- Menu Item 4 -->
 					<h2>Cheesy Cheese</h2>
-					<p>You're not boring, you know what you like!</p>
-					<p>Gobble down this saucy cheesy pile of marinara and mozerella.</P>
+					<p>You're not boring, you know what you like!
+					Gobble down this saucy cheesy pile of marinara and mozerella.</P>
 					<p>$ 8.00</P>
 					
 					<!-- Menu Item 5 -->
 					<h2>Voracious Veggie</h2>
-					<p>Vegetarians rejoyce!</p>
-					<p>Basil pesto base, with mozerella, fresh tomatoes, green onion, and garlic.</P>
+					<p>Vegetarians rejoyce!
+					Basil pesto base, with mozerella, fresh tomatoes, green onion, and garlic.</P>
 					<p>$ 11.00</P>
 					
 					<!-- Menu Item 6 -->
 					<h2>Spectacular Spinach</h2>
-					<p>No matter how you spin it, this is a spectacular pizza!</p>
-					<p>Garlic and olive oil base, with mozerella, spinach, red peppers, goat cheese, and toasted cashews.</P>
+					<p>No matter how you spin it, this is a spectacular pizza!
+					Garlic and olive oil base, with mozerella, spinach, red peppers, goat cheese, and toasted cashews.</P>
 					<p>$ 12.00</P>
 				</article>
+				</div>
+				<p id="divider">&#9671;&#9671;&#9671;</p>
+				<div class="row" id="drinks">
+					<table>
+						<tr>
+							<th colspan="2">Beverages</th>
+						</tr>
+						<tr>
+							<td>Root Beer</td>
+							<td>$ 3.00</td>
+						</tr>
+						<tr>
+							<td>Bottled Water</td>
+							<td>$ 1.25</td>
+						</tr>
+						<tr>
+							<td>Lemonade</td>
+							<td>$ 1.00</td>
+						</tr>
+						<tr>
+							<td>Ice Tea</td>
+							<td>$ 1.25</td>
+						</tr>
+					</table>
+				</div>
 			</div>
 			
 			<footer>
 				<p>1984 Flying Pizza Drive</p>
 				<p>Justorderit, OK 359464</P>
 				<p>1-800-555-3766
-
+				<p id="divider">&#9671;</p>
 				<p>&copy; 2018 Nathan Hyatt. All rights reserved.</P>
 			</footer>
 		</main>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<!--
+	Project: Lucky Sevens
+	Created By: Nathan Hyatt
+	Date Created: 9/19/18
+	Date Modified: 9/20/18
+-->
+
+<html>
+
+<head>
+	<script type="text/javascript" src="scripts/luckySevens.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/
+		bootstrap/4.1.3/css/bootstrap.min.css" 
+		crossorigin="anonymous">
+	<style>
+		h1 {
+			font-size: 4em;
+		}
+		#betLabel {
+			font-size: 1.5em;
+		}
+		#bet {
+			margin-left: 15px;
+			margin-right: 5px;
+			background-image: url('images/dollar-20px.png'); /*image from: https://pixabay.com/en/dollar-symbol-sign-icon-money-1159943/*/
+			background-repeat: no-repeat;
+			background-position: 0%;
+			padding-left: 20px;
+			width: 100px;
+		}
+		.col-center {
+			float: 0;
+			margin: auto;
+		}
+		.col-center-left {
+			margin-right: 0;
+			margin-left: auto;
+		}
+		.col-center-right {
+			margin-left: 0;
+			margin-right: auto;
+		}
+		#submitButton {
+			margin-top: 10px;
+			margin-bottom: 20px;
+		}
+		th {
+			text-align: center;
+			font-size: 2em;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div class="container"> <!-- container to center header -->
+		<header class="row">
+			<div class="col-center">
+				<h1>Lucky Sevens</h1>
+			</div>
+		</header>
+		
+		<form name="diceRoll" onsubmit="return playLuckySevens();" class="form-inline">
+			<div class="container"> <!-- container for centering form items -->
+				<div class="row">
+					<div class="col-center-left"> <!-- label div -->
+						<label for="bet" id="betLabel">Starting Bet:</label>
+					</div>
+					<div class="col-center-right"> <!-- input box div -->
+						<input type="number" class="form-control" id="bet">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-center"> <!-- submit button div -->
+						<button type="submit" id="submitButton" class="btn btn-default">Play</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="container"> <!-- container to center table -->
+		<div class="row">
+			<div class="col-center">
+				<table id="results" class="table table-striped" style="display: none;">
+					<thead>
+						<tr>
+							<th colspan="2">Results</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Starting Bet</td>
+							<td><span id="startingBet"></span></td>
+						</tr>
+						
+						<tr>
+							<td>Total Rolls Before Going Broke</td>
+							<td><span id="totalRolls"></span></td>
+						</tr>
+						
+						<tr>
+							<td>Highest Ammount Won</td>
+							<td><span id="highAmmount"></span></td>
+						</tr>
+						
+						<tr>
+							<td>Roll Count at Highest Ammount Won</td>
+							<td><span id="countAtHigh"></span></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

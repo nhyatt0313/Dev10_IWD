@@ -25,17 +25,20 @@ nav {
 	padding-left: 30px;
 	margin-bottom: 10px;
 }
-nav .btn {
+nav .nav-pills {
 	background-color: #fff4f0;
 	color: #353c61;
 	margin: 5px 5px 5px 0;
+	padding: 10px;
+	border-radius: 4px;
 }
-nav .btn:hover {
+nav .nav-pills:hover {
 	font-weight: bold;
 	color: #fff4f0;
+	text-decoration: none;
 }
-nav .btn:visited {
-	color: #e84d02;
+nav .nav-pills:visited {
+	color: #555;
 }
 .page-content {
 	padding: 10px;

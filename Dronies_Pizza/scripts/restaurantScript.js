@@ -2,7 +2,7 @@
 /*
 	Name: Nathan Hyatt
 	Date Created: 09/21/2018
-	Most Recent Revision: 09/21/2018
+	Most Recent Revision: 09/22/2018
 */
 
 function formValidation() {
@@ -69,7 +69,22 @@ function formValidation() {
 	// additional information
 	var info = document.forms["contact-us"]["info"].value;
 	// have they visited the restaurant?
-	var visited = document.forms["contact-us"]["radio-input"].value;
+	var visit = "unchecked";
+	var visited = document.getElementsByName("visit");
+	for (var i=0; i<visited.length; i++) {
+		if (visited[i].checked) {
+			visit = visited[i].value;
+		}
+	}
 	// best days to contact
-	var best = document.forms["contact-us"]["checkbox-selection"].value;
+	var days = document.getElementsByName("day");
+	var best = ["m", "t", "w", "th", "f"];
+	var removed = 0;
+	for (var i=0; i<days.length; i++) {
+		if (!days[i].checked) {
+			best.splice(i - removed,1); // removes the unchecked items from array
+			removed++; // variable to account for shift between arrays once items are removed
+		}
+	}
+	return false;
 }

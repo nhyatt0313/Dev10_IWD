@@ -11,6 +11,7 @@ header, footer {
 	text-align: center;
 	margin-top: 10px;
 	padding: 10px 0;
+	min-width: 490px;
 }
 header {
 	font-family: 'Cinzel', serif;
@@ -49,8 +50,15 @@ nav .nav-pills:visited {
 	background-color: #305261;
 	margin: 0 30px;
 	color: #fff4f0;
+	min-width: 430px;
 }
 #divider {
 	color: #fff4f0;
+	text-align: center;
+}
+#noscript {
+	height: 30px;
+	background-color: #f00;
+	color: #fff;
 	text-align: center;
 }
